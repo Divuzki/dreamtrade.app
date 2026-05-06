@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Dream Trade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green:       #1D9E75;
+  --green-dark:  #0F6E56;
+  --green-deep:  #085041;
+  --green-light: #E1F5EE;
+  --green-mid:   #9FE1CB;
+  --amber:       #F5A623;
+  --white:       #FFFFFF;
+  --off:         #F7F7F4;
+  --off2:        #F0F0EC;
+  --ink:         #0E0E0E;
+  --ink2:        #1A1A1A;
+  --muted:       #6B6B6B;
+  --muted2:      #9A9A9A;
+  --border:      #E4E4E0;
+  --border2:     #EBEBEB;
+  --radius:      14px;
+  --radius-sm:   8px;
+  --shadow:      0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.05);
+  --shadow-md:   0 2px 8px rgba(0,0,0,0.08), 0 8px 32px rgba(0,0,0,0.07);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border2);
+  padding: 0 5%;
+  height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 9px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700; font-size: 1.1rem;
+  color: var(--ink); text-decoration: none; letter-spacing: -0.02em;
+}
+.nav-mark {
+  width: 30px; height: 30px; border-radius: 8px;
+  background: var(--green);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-links { display: flex; align-items: center; gap: 1.75rem; list-style: none; }
+.nav-links a {
+  font-size: 0.875rem; font-weight: 400;
+  color: var(--muted); text-decoration: none;
+  transition: color 0.18s;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-cta-btn {
+  background: var(--green); color: #fff !important;
+  padding: 0.5rem 1.2rem; border-radius: 8px;
+  font-weight: 500 !important; font-size: 0.875rem !important;
+  transition: background 0.18s !important;
+}
+.nav-cta-btn:hover { background: var(--green-dark) !important; }
+
+/* ─── PRIVACY POLICY ─── */
+.privacy-wrap {
+  max-width: 780px; margin: 0 auto;
+  padding: 5rem 5% 6rem;
+}
+.priv-back {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.875rem; color: var(--muted);
+  background: none; border: 1px solid var(--border);
+  border-radius: 7px; padding: 0.45rem 0.875rem;
+  cursor: pointer; font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.18s, color 0.18s;
+  margin-bottom: 3rem;
+  text-decoration: none;
+}
+.priv-back:hover { border-color: var(--ink); color: var(--ink); }
+.priv-hdr { margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border2); }
+.priv-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin-bottom: 0.75rem; }
+.priv-hdr h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2.25rem; font-weight: 800; letter-spacing: -0.03em;
+  color: var(--ink); margin-bottom: 0.75rem; line-height: 1.1;
+}
+.priv-hdr p { font-size: 1rem; color: var(--muted); font-weight: 300; line-height: 1.75; }
+.priv-section { margin-bottom: 2.75rem; }
+.priv-section h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.125rem; font-weight: 700; color: var(--ink);
+  margin-bottom: 0.875rem; padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border2);
+  letter-spacing: -0.015em;
+}
+.priv-section p { font-size: 0.9375rem; color: #444; line-height: 1.8; margin-bottom: 0.75rem; font-weight: 300; }
+.priv-section ul { list-style: none; margin: 0.5rem 0 0.75rem; display: flex; flex-direction: column; gap: 0.45rem; }
+.priv-section ul li {
+  font-size: 0.9375rem; color: #444; font-weight: 300;
+  padding-left: 1.25rem; position: relative; line-height: 1.75;
+}
+.priv-section ul li::before {
+  content: '';
+  position: absolute; left: 0; top: 0.6em;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--green-mid);
+}
+.priv-section a { color: var(--green-dark); text-decoration: none; }
+.priv-section a:hover { text-decoration: underline; }
+.priv-section strong { font-weight: 500; color: var(--ink); }
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../" class="nav-logo">
+    <div class="nav-mark">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+        <path d="M3 13L8 3L13 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 9.5h6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    Dream Trade
+  </a>
+  <ul class="nav-links">
+    <li><a href="../#features">Features</a></li>
+    <li><a href="../#how">How it works</a></li>
+    <li><a href="../#download">Download</a></li>
+    <li><a href="./" aria-current="page" style="color:var(--ink);">Privacy</a></li>
+    <li><a href="#" class="nav-cta-btn">Get started</a></li>
+  </ul>
+</nav>
+
+<div class="privacy-wrap">
+  <a href="../" class="priv-back">← Back to Dream Trade</a>
+
+  <div class="priv-hdr">
+    <div class="priv-eyebrow">Last updated: May 1, 2025</div>
+    <h1>Privacy Policy</h1>
+    <p>This Privacy Policy explains how Dream Trade Ltd collects, uses, stores, and protects your personal information when you use our platform, mobile apps, and services.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>1. Who we are</h2>
+    <p>Dream Trade Ltd ("Dream Trade", "we", "us", or "our") operates a cryptocurrency exchange platform available at dreamtrade.app and through our iOS and Android mobile applications.</p>
+    <p>We are registered in Nigeria and operate as a licensed Virtual Digital Asset (VDA) Service Provider under the Nigeria Securities and Exchange Commission (SEC) framework.</p>
+    <p>For privacy inquiries, contact our Data Protection Officer at <a href="mailto:privacy@dreamtrade.app">privacy@dreamtrade.app</a>.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>2. Information we collect</h2>
+    <p><strong>Information you provide directly:</strong></p>
+    <ul>
+      <li>Account registration details (full name, email address, phone number, password)</li>
+      <li>Identity verification documents (BVN, government-issued ID, selfie/biometric data) via Smile Identity</li>
+      <li>Bank account details for NGN withdrawals and deposit verification via Paystack</li>
+      <li>Tax identification numbers where required by Nigerian law</li>
+      <li>Communications with our support team via chat, email, or WhatsApp</li>
+    </ul>
+    <p><strong>Information collected automatically:</strong></p>
+    <ul>
+      <li>Device identifiers, IP address, mobile OS, browser type, and app version</li>
+      <li>Usage data: pages viewed, trades executed, session duration, and features used</li>
+      <li>Transaction history: deposit amounts, trade orders, withdrawal records</li>
+      <li>Log data, timestamps, error reports, and crash diagnostics</li>
+      <li>Location data (city/region level, derived from IP address)</li>
+    </ul>
+  </div>
+
+  <div class="priv-section">
+    <h2>3. How we use your information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Provide, operate, and continuously improve our trading platform and mobile apps</li>
+      <li>Process cryptocurrency trades and NGN bank transfers on your behalf</li>
+      <li>Verify your identity and comply with KYC/AML obligations under Nigerian law</li>
+      <li>Monitor for and prevent fraud, money laundering, and unauthorized account access</li>
+      <li>Send transaction confirmations, security alerts, and service notifications</li>
+      <li>Comply with SEC reporting requirements and legal processes</li>
+      <li>Provide customer support via live chat, email, and WhatsApp</li>
+      <li>Analyze usage patterns to improve our platform features and UX</li>
+      <li>Send marketing communications where you have consented</li>
+    </ul>
+  </div>
+
+  <div class="priv-section">
+    <h2>4. Legal basis for processing</h2>
+    <ul>
+      <li><strong>Contract performance</strong> — processing necessary to deliver our trading and payment services to you</li>
+      <li><strong>Legal obligation</strong> — KYC, AML, tax reporting, and SEC compliance requirements</li>
+      <li><strong>Legitimate interests</strong> — fraud detection, platform security, and service improvement</li>
+      <li><strong>Consent</strong> — marketing communications and optional analytics; you may withdraw at any time</li>
+    </ul>
+  </div>
+
+  <div class="priv-section">
+    <h2>5. Sharing your information</h2>
+    <p>We do not sell your personal data. We share information only in the following circumstances:</p>
+    <ul>
+      <li><strong>Smile Identity</strong> — for BVN verification, ID document checks, and biometric selfie matching</li>
+      <li><strong>Paystack</strong> — for NGN deposits, bank account verification, and withdrawals via the Paystack Transfer API</li>
+      <li><strong>Cloud infrastructure providers</strong> — for hosting, database management, and Redis caching (Railway, Supabase, Upstash)</li>
+      <li><strong>Nigeria SEC and regulatory authorities</strong> — when legally required for compliance reporting</li>
+      <li><strong>NFIU and law enforcement</strong> — when required to comply with AML obligations or lawful requests</li>
+      <li><strong>Professional advisors</strong> — lawyers and auditors, under strict confidentiality agreements</li>
+      <li><strong>Successor entities</strong> — in the event of a merger, acquisition, or sale of assets</li>
+    </ul>
+  </div>
+
+  <div class="priv-section">
+    <h2>6. Data retention</h2>
+    <p>We retain your personal data for as long as your account is active and as required by Nigerian financial regulations. Under the Money Laundering (Prevention and Prohibition) Act 2022, KYC records and transaction data must be kept for a minimum of 5 years after the end of a business relationship.</p>
+    <p>You may request deletion of certain data elements, subject to our regulatory obligations. We will inform you clearly of any data we are legally required to retain before processing your request.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>7. Mobile app data &amp; permissions</h2>
+    <p>Our iOS and Android apps may request the following device permissions:</p>
+    <ul>
+      <li><strong>Camera</strong> — for selfie/biometric KYC verification via Smile Identity</li>
+      <li><strong>Photo library</strong> — to upload ID documents during verification</li>
+      <li><strong>Notifications</strong> — for trade confirmations, price alerts, and security alerts</li>
+      <li><strong>Biometrics (Face ID / Fingerprint)</strong> — for secure app login (data stays on device only)</li>
+    </ul>
+    <p>You can revoke any of these permissions in your device settings at any time. Revoking camera or photo access will disable KYC functionality.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>8. Cookies and tracking</h2>
+    <p>Our web platform uses cookies and similar technologies for authentication (JWT sessions), user preference storage, and analytics. You can control cookies through your browser settings, though disabling them may affect login and platform functionality.</p>
+    <p>Our mobile apps do not use browser cookies. We use anonymized analytics (crash reports, feature usage) to improve the app experience. We do not track you across third-party apps or services.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>9. Data security</h2>
+    <p>We implement multiple layers of security to protect your data and funds:</p>
+    <ul>
+      <li>TLS encryption for all data in transit</li>
+      <li>AES-256 encryption for sensitive data at rest</li>
+      <li>JWT-based authentication with refresh token rotation and Redis-based blacklisting</li>
+      <li>Two-factor authentication (TOTP) available for all accounts</li>
+      <li>Biometric KYC via Smile Identity for identity assurance</li>
+      <li>Cold wallet custody for crypto holdings above float threshold</li>
+      <li>AML transaction monitoring middleware on all withdrawal operations</li>
+      <li>Regular security audits and penetration testing</li>
+    </ul>
+    <p>Despite these measures, no system is completely secure. In the event of a data breach affecting your personal information, we will notify you within 72 hours as required by Nigerian law.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>10. International transfers</h2>
+    <p>Some of our service providers (including Smile Identity and cloud infrastructure partners) may process your data outside Nigeria. Where this occurs, we ensure appropriate contractual safeguards are in place to protect your data to at least the same standard required by Nigerian data protection law (NDPR 2019).</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>11. Your rights</h2>
+    <p>Under the Nigeria Data Protection Regulation (NDPR) 2019, you have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Correct inaccurate or incomplete data in your account</li>
+      <li>Request deletion of your data (subject to legal retention requirements)</li>
+      <li>Object to or restrict certain types of processing</li>
+      <li>Data portability — receive your transaction history in a structured format</li>
+      <li>Withdraw consent at any time for consent-based processing (e.g. marketing emails)</li>
+      <li>Lodge a complaint with the Nigeria Data Protection Commission (NDPC)</li>
+    </ul>
+    <p>To exercise any right, email <a href="mailto:privacy@dreamtrade.app">privacy@dreamtrade.app</a>. We will respond within 30 days.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>12. Children's privacy</h2>
+    <p>Our platform is strictly for individuals aged 18 and above. We do not knowingly collect personal data from minors. If you believe a minor has created an account or provided us with data, please contact us immediately at <a href="mailto:privacy@dreamtrade.app">privacy@dreamtrade.app</a> and we will delete it promptly.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>13. Changes to this policy</h2>
+    <p>We may update this Privacy Policy to reflect changes in our services, technology, or applicable law. We will notify you of material changes by email and/or by displaying a prominent notice in the app at least 30 days before the changes take effect.</p>
+    <p>Your continued use of Dream Trade after the effective date constitutes your acceptance of the updated policy. You can always find the current version of this policy at dreamtrade.app/privacy.</p>
+  </div>
+
+  <div class="priv-section">
+    <h2>14. Contact us</h2>
+    <p>For privacy questions, data requests, or to exercise your rights, contact our Data Protection Officer:</p>
+    <ul>
+      <li>Email: <a href="mailto:privacy@dreamtrade.app">privacy@dreamtrade.app</a></li>
+      <li>Support: <a href="mailto:support@dreamtrade.app">support@dreamtrade.app</a></li>
+      <li>Address: Dream Trade Ltd, Lagos, Nigeria</li>
+    </ul>
+    <p>We aim to respond to all privacy requests within 5 business days and to resolve them within 30 days.</p>
+  </div>
+
+  <div style="margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--border2); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+    <a href="../" class="priv-back">← Back to Dream Trade</a>
+    <p style="font-size:0.8125rem; color:var(--muted2);">© 2025 Dream Trade Ltd · Nigeria SEC VDA Service Provider</p>
+  </div>
+</div>
+
+</body>
+</html>
